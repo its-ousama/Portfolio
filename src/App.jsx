@@ -488,7 +488,7 @@ export default function App() {
       <main>
         {/* ── hero ── */}
         <section id="hero" className="hero">
-          <p className="hero-eyebrow rv">SOFTWARE ENGINEER — EPITA PARIS</p>
+          <p className="hero-eyebrow rv">SOFTWARE ENGINEER — PARIS</p>
           <h1 className="hero-name" aria-label="Ousama Hassan">
             <span className="hero-line rv">OUSAMA</span>
             <span className="hero-line rv d1">HASSAN<span className="acc">.</span></span>
