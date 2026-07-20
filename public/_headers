@@ -1,0 +1,18 @@
+# Cloudflare Pages — caching & security headers
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# hashed build assets never change — cache them hard
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# images & CV: cache a day, so replacing them shows up quickly
+/images/*
+  Cache-Control: public, max-age=86400
+
+/*.pdf
+  Cache-Control: public, max-age=86400
