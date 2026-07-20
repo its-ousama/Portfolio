@@ -125,7 +125,7 @@ const MARQUEE = ["TYPESCRIPT", "REACT", "NODE.JS", "PYTHON", "JAVA", "DOCKER", "
 
 const BOT_LINES = {
   hero: "Hey — I'm the co-pilot.",
-  about: "The pilot: EPITA engineer, three languages ",
+  about: "The pilot: EPITA engineer,bartender,  three languages ",
   experience: "Current mission: interning at SNCF | bartending at FrogPubs",
   work: "Selected work — new projects dock here regularly.",
   stack: "Full stack, from the UI down to the networks.",
@@ -498,7 +498,7 @@ export default function App() {
               I build web apps, network tooling and everything in between —
               currently automating railway infrastructure at <b>SNCF</b>,
               finishing my CS degree at <b>EPITA</b>, and shipping side
-              projects on the way.
+              projects .
             </p>
             <div className="hero-side rv d3">
               <a className="hero-badge hov" href={LINKS.cv} target="_blank" rel="noreferrer">
@@ -531,10 +531,9 @@ export default function App() {
             </div>
             <div className="about-body">
               <p className="about-lead rv">
-                CS engineer in training with a taste for the <em>full picture</em> —
-                from the React component to the network switch it talks through.
-                Meticulous, adaptable, and used to pressure: I've balanced EPITA,
-                an engineering internship and bar shifts in a packed Parisian pub
+                CS engineering student with a taste for the <em>full picture</em> —
+                from the interface people see to the automation logic running behind it. I like building things that work end to end: clean frontends, solid APIs, and the tooling that ties them together.
+                Currently balancing an engineering internship and bar shifts
                 <em> at the same time</em>.
               </p>
               <div className="about-facts">

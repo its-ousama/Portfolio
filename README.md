@@ -4,7 +4,7 @@ Personal portfolio site: dark editorial design, scroll-driven photo parallax,
 custom cursor, and **ORB-1** — a robot co-pilot that tracks the cursor and
 answers visitors' questions through a guided Q&A panel.
 
-🔗 **Live:** [epita.online](https://epita.online) · 💼 [LinkedIn](https://www.linkedin.com/in/ousama-hassan/)
+🔗 **Live:** [sam.epita.online](https://sam.epita.online) · 💼 [LinkedIn](https://www.linkedin.com/in/ousama-hassan/)
 
 ![Built with React](https://img.shields.io/badge/React-18-000?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5-000?logo=vite)
