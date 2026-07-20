@@ -90,8 +90,8 @@ All of it sits in clearly marked constants at the top of `src/App.jsx`:
   name: "My App",
   tagline: "One-line pitch",
   tech: "React · Node.js",
-  link: "https://myapp.epita.online",
-  repo: "https://github.com/its-ousama/my-app",
+  link: "https://sam.epita.online",
+  repo: "https://github.com/its-ousama/Portfolio",
   live: true,
 }
 ```

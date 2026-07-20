@@ -76,8 +76,8 @@ const EXPERIENCE = [
     location: "Saint-Denis, FR",
     status: "CURRENT",
     points: [
-      "Building automation tooling for network equipment (switches) and monitoring dashboards in TypeScript & Node.js.",
-      "Delivering management-assigned projects within the team while ramping up on routers, switches and network protocols.",
+      "Building internal tools for network infrastructure within the Automation team using TypeScript and Node.js",
+      "Growing networking expertise while shipping apps that automate network equipment",
     ],
     tech: ["TypeScript", "Node.js", "Networking", "Dashboards"],
   },
@@ -87,12 +87,12 @@ const EXPERIENCE = [
     alt: "Busy pub bar at night",
     period: "DEC 2024 — PRESENT",
     role: "Waiter / Bartender",
-    company: "FrogPubs · The Frog & British Library + FROG XVI",
+    company: "FrogPubs · FROG XVI + The Frog & British Library ",
     location: "Paris, FR",
     status: "IN PARALLEL",
     points: [
       "Floor and bar service in high-traffic Parisian pubs — orders, cocktails, draft beer, always in motion.",
-      "Held alongside full-time studies at EPITA, then alongside the SNCF internship. Pressure is a familiar environment.",
+      "Held alongside full-time studies at EPITA (FROG XVI), then alongside the SNCF internship (The Frog & British Library). Pressure is a familiar environment.",
     ],
     tech: ["Service", "Speed", "Teamwork"],
   },
@@ -114,19 +114,19 @@ const EXPERIENCE = [
 
 const STACK = [
   { k: "LANGUAGES & WEB", v: "TypeScript · JavaScript · Node.js · React · Python · Java · PHP · REST APIs · Microservices" },
-  { k: "NETWORKS", v: "Cisco · GNS3 · Switching & routing protocols" },
-  { k: "DEVOPS & TOOLS", v: "Docker · Git · Linux · Jira · Trello" },
+  { k: "NETWORKS", v: "Cisco · GNS3" },
+  { k: "DEVOPS & TOOLS", v: "Docker · Git · CI/CD · Linux" },
   { k: "DATABASES", v: "SQL · MongoDB · Redis" },
-  { k: "MOBILE", v: "Android (Java)" },
+  { k: "MOBILE", v: "Android (Java) · PWA" },
   { k: "PRACTICES", v: "Agile · Web security · Software architecture · GDPR" },
 ];
 
 const MARQUEE = ["TYPESCRIPT", "REACT", "NODE.JS", "PYTHON", "JAVA", "DOCKER", "CISCO", "MONGODB", "LINUX", "GIT"];
 
 const BOT_LINES = {
-  hero: "Hey — I'm the co-pilot. Scroll, I'll guide you.",
-  about: "The pilot: EPITA engineer, three languages, zero fear.",
-  experience: "Current mission: interning at SNCF.",
+  hero: "Hey — I'm the co-pilot.",
+  about: "The pilot: EPITA engineer, three languages ",
+  experience: "Current mission: interning at SNCF | bartending at FrogPubs",
   work: "Selected work — new projects dock here regularly.",
   stack: "Full stack, from the UI down to the networks.",
   contact: "Open for an alternance from Feb 2027. Say hi.",
@@ -322,7 +322,7 @@ function Bot({ active }) {
   const [blink, setBlink] = useState(false);
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState([
-    { role: "assistant", text: "Hi, I'm ORB-1 — Ousama's co-pilot. I don't do small talk, but I do take questions. Pick one:" },
+    { role: "assistant", text: "Hi, I'm ORB-1 — Sam's co-pilot. I don't do small talk, but I do take questions. Pick one:" },
   ]);
   const [sugs, setSugs] = useState(ROOT);
   const [showAll, setShowAll] = useState(false);
@@ -504,11 +504,10 @@ export default function App() {
               <a className="hero-badge hov" href={LINKS.cv} target="_blank" rel="noreferrer">
                 <svg viewBox="0 0 100 100" className="badge-spin">
                   <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" /></defs>
-                  <text><textPath href="#circ">DOWNLOAD CV — DOWNLOAD CV — DOWNLOAD CV — </textPath></text>
+                  <text><textPath href="#circ">—DOWNLOAD CV —DOWNLOAD CV</textPath></text>
                 </svg>
                 <span className="badge-arrow">↓</span>
               </a>
-              <p className="hero-scroll">SCROLL<br />TO EXPLORE ↓</p>
             </div>
           </div>
         </section>
@@ -541,8 +540,8 @@ export default function App() {
               <div className="about-facts">
                 <div className="fact rv"><span className="fk">BASED</span><span>Vitry-sur-Seine — Paris, France</span></div>
                 <div className="fact rv d1"><span className="fk">EDUCATION</span><span>EPITA · Bachelor in Science & Engineering, 2023–2026</span></div>
-                <div className="fact rv d2"><span className="fk">LANGUAGES</span><span>Arabic (native) · English (fluent) · French</span></div>
-                <div className="fact rv d3"><span className="fk">NEXT</span><span>Master's alternance — available Feb/Apr 2027</span></div>
+                <div className="fact rv d2"><span className="fk">LANGUAGES</span><span>Arabic (native) · English (fluent) · French (intermediate)</span></div>
+                <div className="fact rv d3"><span className="fk">NEXT</span><span>Alternance as part of a Master's degree in computer science — available Feb/Apr 2027</span></div>
                 <div className="fact rv d4"><span className="fk">OFF-DUTY</span><span>Finance · Literature · Table tennis · Fitness</span></div>
               </div>
             </div>
@@ -628,7 +627,7 @@ export default function App() {
             LET'S BUILD<br /><span className="stroke">SOMETHING</span><span className="acc">.</span>
           </h2>
           <p className="contact-sub rv">
-            Looking for an <b>alternance from February/April 2027</b> as part of a Master's degree.
+            Looking for an <b>alternance from February/April 2027</b> as part of a Master's degree in computer science.
             For opportunities, collaborations or just to talk shop:
           </p>
           <a className="contact-mail rv hov" href={`mailto:${LINKS.email}`}>{LINKS.email}<span className="mail-line" /></a>
@@ -711,7 +710,8 @@ main { position: relative; z-index: 1; }
 .hero-eyebrow { font-family: var(--fm); font-size: clamp(11px, 1.2vw, 13px); letter-spacing: .3em; color: var(--acc); margin-bottom: 3vh; }
 .hero-name { font-family: var(--fd); font-weight: 600; font-size: clamp(64px, 15.5vw, 230px); line-height: .88; letter-spacing: -.02em; }
 .hero-line { display: block; }
-.hero-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-top: 6vh; }
+.hero-foot { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-end; gap: clamp(28px, 4vw, 60px); margin-top: 6vh; }
+.hero-foot .hero-badge { flex: none; margin-bottom: 6px; }
 .hero-intro { max-width: 46ch; color: var(--mute); font-size: clamp(15px, 1.5vw, 18px); line-height: 1.65; }
 .hero-intro b { color: var(--paper); font-weight: 600; }
 .hero-side { display: flex; align-items: flex-end; gap: 34px; }
@@ -809,7 +809,8 @@ main { position: relative; z-index: 1; }
 .footer button:hover { color: var(--paper); }
 
 /* bot */
-.bot { position: fixed; right: 26px; bottom: 24px; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; }
+.bot { position: fixed; right: 26px; bottom: 24px; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; pointer-events: none; }
+.chat, .bot-btn { pointer-events: auto; }
 .bot-btn { background: none; border: none; padding: 0; position: relative; }
 .bot-ask { position: absolute; top: -2px; left: -14px; transform: rotate(-12deg); font-family: var(--fm); font-size: 9.5px; letter-spacing: .18em; color: var(--acc); animation: blip 2.4s infinite; }
 .bot-float { animation: hover 5s ease-in-out infinite; filter: drop-shadow(0 12px 20px rgba(0,0,0,.5)); transition: transform .25s; }
