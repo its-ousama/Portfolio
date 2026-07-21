@@ -14,7 +14,7 @@ const PROJECTS = [
     tagline: "Personal app hub — every project I ship, deployed in one place",
     tech: "React · Node.js · CI/CD",
     link: "https://orbit.epita.online",
-    repo: "https://github.com/its-ousama",
+    repo: "https://github.com/its-ousama/orbit",
     live: true,
   },
   {
@@ -24,17 +24,17 @@ const PROJECTS = [
     tagline: "AI chatbot for personal finance — transactions, JWT auth, tailored advice",
     tech: "React · Node.js · MongoDB · OpenAI",
     link: null,
-    repo: "https://github.com/its-ousama",
+    repo: "https://github.com/its-ousama/finance-coach-chatbot",
     live: false,
   },
   {
-    id: "shoe-parallax",
-    year: "2025",
-    name: "Shoe Parallax",
+    id: "sole-archive",
+    year: "2026",
+    name: "Sole Archive",
     tagline: "E-commerce landing with fluid parallax product showcases",
     tech: "React · TypeScript · Tailwind CSS",
-    link: "https://shoe-parallaz.onrender.com/",
-    repo: "https://github.com/its-ousama",
+    link: "https://sole-archive.epita.online",
+    repo: "https://github.com/its-ousama/sole-archive",
     live: true,
   },
   {
@@ -183,7 +183,7 @@ const QA = [
   {
     id: "projects",
     q: "What has he built?",
-    a: "Orbit (his live app hub at orbit.epita.online), Finance Coach (an AI finance chatbot — React/Node/MongoDB/OpenAI, with JWT auth and transaction tracking), Shoe Parallax (an animated, responsive e-commerce landing page in React/TS/Tailwind), and Math Wars (an Android quiz game in Java — timed challenges, persistent scores, haptics). New ones dock regularly.",
+    a: "Orbit (his live app hub at orbit.epita.online), Finance Coach (an AI finance chatbot — React/Node/MongoDB/OpenAI, with JWT auth and transaction tracking), Sole Archive (an animated, responsive e-commerce landing page in React/TS/Tailwind), and Math Wars (an Android quiz game in Java — timed challenges, persistent scores, haptics). New ones dock regularly.",
     next: ["orbit", "stack", "funfact"],
   },
   {
